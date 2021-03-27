@@ -4,7 +4,7 @@ import { useTesseractWorker } from "./tesseract-context";
 
 export default function TextRecognize() {
   const {
-    imageData,
+    imageBlob,
     canvasRef
   } = useCanvasContext();
 
@@ -22,7 +22,7 @@ export default function TextRecognize() {
       }
     }
     work();    
-  }, [imageData, worker, canvasRef]);
+  }, [imageBlob, worker, canvasRef]);
 
   return (
     <div className="textRecognizer">{text}</div>

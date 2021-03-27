@@ -31,9 +31,16 @@ export default function CanvasContextProvider({
   }, [resize]);
 
   const mouseDown = useCallback(({ nativeEvent }) => {
-    const { offsetX, offsetY } = nativeEvent;
+    let x, y;
+    if (nativeEvent.touches && nativeEvent.touches[0]) {
+      x = nativeEvent.touches[0].pageX
+      y = nativeEvent.touches[0].pageY
+    } else {
+      x = nativeEvent.pageX
+      y = nativeEvent.pageY
+    }
     canvasContextRef.current.beginPath();
-    canvasContextRef.current.moveTo(offsetX, offsetY);
+    canvasContextRef.current.moveTo(x, y);
     setIsMouseDown(true);
   }, []);
 
@@ -48,8 +55,16 @@ export default function CanvasContextProvider({
     if (!isMouseDown) {
       return;
     }
-    const { offsetX, offsetY } = nativeEvent;
-    canvasContextRef.current.lineTo(offsetX, offsetY);
+    
+    let x, y;
+    if (nativeEvent.touches && nativeEvent.touches[0]) {
+      x = nativeEvent.touches[0].pageX
+      y = nativeEvent.touches[0].pageY
+    } else {
+      x = nativeEvent.pageX
+      y = nativeEvent.pageY
+    }
+    canvasContextRef.current.lineTo(x, y);
     canvasContextRef.current.stroke();
   }, [isMouseDown]);
 

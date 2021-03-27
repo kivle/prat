@@ -21,9 +21,16 @@ export default function Canvas() {
       ref={canvasRef} 
       id="canvas" 
       className="canvas"
+      
       onMouseDown={mouseDown}
+      onTouchStart={mouseDown}
+
       onMouseUp={mouseUp}
+      onTouchEnd={mouseUp}
+      onTouchCancel={mouseUp}
+
       onMouseMove={mouseMove}
+      onTouchMove={mouseMove}
     />
   )
 }
