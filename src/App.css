@@ -5,3 +5,10 @@
   width: 100vw;
   height: 100vh;
 }
+
+.textRecognizer {
+  position: absolute;
+  left: 100px;
+  top: 40px;
+  background-color: gray;
+}
