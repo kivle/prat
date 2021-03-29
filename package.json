@@ -1,5 +1,6 @@
 {
   "name": "prat",
+  "homepage": "http://kivle.github.io/prat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
