@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/prat/static/css/main.45af004e.chunk.css",
+    "main.js": "/prat/static/js/main.f95f540d.chunk.js",
+    "main.js.map": "/prat/static/js/main.f95f540d.chunk.js.map",
+    "runtime-main.js": "/prat/static/js/runtime-main.4bbadc87.js",
+    "runtime-main.js.map": "/prat/static/js/runtime-main.4bbadc87.js.map",
+    "static/js/2.b6e1973a.chunk.js": "/prat/static/js/2.b6e1973a.chunk.js",
+    "static/js/2.b6e1973a.chunk.js.map": "/prat/static/js/2.b6e1973a.chunk.js.map",
+    "static/js/3.7001c548.chunk.js": "/prat/static/js/3.7001c548.chunk.js",
+    "static/js/3.7001c548.chunk.js.map": "/prat/static/js/3.7001c548.chunk.js.map",
+    "index.html": "/prat/index.html",
+    "static/css/main.45af004e.chunk.css.map": "/prat/static/css/main.45af004e.chunk.css.map",
+    "static/js/2.b6e1973a.chunk.js.LICENSE.txt": "/prat/static/js/2.b6e1973a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bbadc87.js",
+    "static/js/2.b6e1973a.chunk.js",
+    "static/css/main.45af004e.chunk.css",
+    "static/js/main.f95f540d.chunk.js"
+  ]
+}
